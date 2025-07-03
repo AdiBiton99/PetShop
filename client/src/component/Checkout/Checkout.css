@@ -1,0 +1,84 @@
+/* קובץ עיצוב עבור קומפוננטת Checkout */
+.checkout-page {
+  /* עיצוב עמוד צ'קאאוט */
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 2rem 1.5rem;
+  direction: rtl;
+  text-align: right;
+}
+.checkout-cart-list {
+  /* עיצוב רשימת עגלה בצ'קאאוט */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    direction: rtl;
+  }
+  th, td {
+    padding: 0.5rem;
+    text-align: right;
+  }
+  th {
+    background: #BF9264;
+  }
+  tr:not(:last-child) td {
+    border-bottom: 1px solid #eee;
+  }
+  td img {
+    float: right;
+    margin-left: 8px;
+  }
+}
+.checkout-form {
+  /* עיצוב טופס */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  direction: rtl;
+  text-align: right;
+  input, select {
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    text-align: right;
+  }
+}
+.checkout-total {
+  /* עיצוב סה"כ */
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem 0;
+}
+.checkout-error {
+  /* עיצוב הודעת שגיאה */
+  color: #c00;
+  font-weight: bold;
+}
+.checkout-form button {
+  background: #BF9264;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.checkout-form button:hover {
+   background: #EFE4D2;
+  color: #222;
+  border: #222 solid 1px;
+}
+@media (max-width: 700px) {
+  .checkout-page {
+    padding: 1rem 0.5rem;
+  }
+  .checkout-cart-list table, .checkout-form {
+    font-size: 0.95rem;
+  }
+}

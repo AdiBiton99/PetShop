@@ -1,0 +1,66 @@
+/* עיצוב מודרני לניווט הראשי (NavBar) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #BF9264;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 36px;
+  margin-inline-end: 10px;
+  border-radius: 8px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.cart-icon {
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.cart-icon img {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+  margin-inline-end: 6px;
+  display: block;
+}
+.cart-icon span {
+  margin-inline-start: 6px;
+}
+.cart-badge {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  background: #fff;
+  color: #222;
+  border-radius: 50%;
+  min-width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5em;
+  font-weight: bold;
+  border: 2px solid #222;
+  box-shadow: 0 1px 4px #0002;
+  z-index: 2;
+}
